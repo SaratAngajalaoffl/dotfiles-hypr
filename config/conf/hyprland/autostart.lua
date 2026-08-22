@@ -30,6 +30,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("openrgb --gui --startminimized")
     hl.exec_cmd("wl-paste --type text --watch cliphist store")
     hl.exec_cmd("wl-paste --type image --watch cliphist store")
+    hl.exec_cmd("cliamp --daemon")
 
     -----------------------
     -- SCRIPT AUTOSTART --
