@@ -1,0 +1,14 @@
+------------------------------------------------------------------------------------------
+-- HYPRLAND MISC
+------------------------------------------------------------------------------------------
+
+-- Created by mugiwara@loki.local on Sun Feb 01 2026
+
+-- This file contains misc settings for the Hyprland configuration.
+
+hl.config({
+    misc = {
+        force_default_wallpaper = 0,
+        disable_hyprland_logo   = true,
+    },
+})
