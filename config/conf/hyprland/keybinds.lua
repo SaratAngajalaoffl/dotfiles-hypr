@@ -23,6 +23,7 @@ hl.bind(mainMod .. " + C",           hl.dsp.exec_cmd(vars.browser))
 hl.bind(mainMod .. " + SPACE",       hl.dsp.exec_cmd(vars.menu))
 hl.bind(mainMod .. " + SHIFT + C",   hl.dsp.exec_cmd(vars.picker))
 hl.bind("CTRL + SHIFT + 4",          hl.dsp.exec_cmd(vars.screenshot))
+hl.bind(mainMod .. " + CTRL + SPACE", hl.dsp.exec_cmd(vars.themeMenuScript))
 
 --------------------------
 -- WINDOW MANAGEMENT --

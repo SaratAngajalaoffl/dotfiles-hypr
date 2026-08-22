@@ -8,6 +8,10 @@
 
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 
+-- Border colors come from the active theme (~/.config/theme/current), managed by
+-- theme-set.sh. See theme/config/themes/<name>/hyprland-colors.lua in the theme submodule.
+local colors = require("conf.hyprland.colors")
+
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#general
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#decoration
 hl.config({
@@ -19,8 +23,8 @@ hl.config({
 
         -- https://wiki.hypr.land/Configuring/Basics/Variables/#variable-types for info about colors
         col = {
-            active_border   = "rgba(f38ba8aa)",
-            inactive_border = "rgba(7f849caa)",
+            active_border   = colors.active_border,
+            inactive_border = colors.inactive_border,
         },
 
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps

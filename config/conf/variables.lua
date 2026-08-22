@@ -47,5 +47,6 @@ M.wallpaperScript = "~/.local/bin/select_wallpaper.sh"
 M.toggleRofiScript = "~/.local/bin/toggle_rofi.sh"
 M.songDetailScript = "~/.local/bin/song_detail.sh"
 M.reloadScript = "~/.local/bin/reload_all_services.sh"
+M.themeMenuScript = "~/.local/bin/theme-menu.sh"
 
 return M
