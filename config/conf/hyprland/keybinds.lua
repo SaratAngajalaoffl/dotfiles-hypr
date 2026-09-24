@@ -24,6 +24,7 @@ hl.bind(mainMod .. " + SPACE",       hl.dsp.exec_cmd(vars.launcherScript))
 hl.bind(mainMod .. " + W",           hl.dsp.exec_cmd(vars.islandHome))
 hl.bind(mainMod .. " + CTRL + SPACE", hl.dsp.exec_cmd(vars.themeWidget))
 hl.bind(mainMod .. " + SHIFT + V",   hl.dsp.exec_cmd(vars.clipboardWidget))
+hl.bind(mainMod .. " + M",           hl.dsp.exec_cmd(vars.emojiWidget))
 hl.bind(mainMod .. " + SHIFT + C",   hl.dsp.exec_cmd(vars.picker))
 hl.bind("CTRL + SHIFT + 4",          hl.dsp.exec_cmd(vars.screenshot))
 

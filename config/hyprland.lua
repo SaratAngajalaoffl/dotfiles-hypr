@@ -21,3 +21,10 @@ require("conf.hyprland.autostart")
 require("conf.hyprland.misc")
 require("conf.hyprland.env")
 require("conf.hyprland.input")
+
+-- Last, so settings chosen in the shell's settings widget win over the
+-- defaults above (gaps, opacity, blur, animations). See conf/shell_settings.lua.
+local shell = require("conf.shell_settings")
+if next(shell.config) ~= nil then
+    hl.config(shell.config)
+end

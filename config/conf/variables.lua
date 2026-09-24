@@ -52,6 +52,7 @@ M.launcherScript = "qs ipc call island toggle launcher"
 M.islandHome = "qs ipc call island toggle home"
 M.themeWidget = "qs ipc call island toggle theme"
 M.clipboardWidget = "qs ipc call island toggle clipboard"
+M.emojiWidget = "qs ipc call island toggle emoji"
 
 ----------------------------
 -- QUICKSHELL --
