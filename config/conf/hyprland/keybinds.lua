@@ -21,9 +21,11 @@ hl.bind(mainMod .. " + E",           hl.dsp.exec_cmd(vars.fileManager))
 hl.bind(mainMod .. " + T",           hl.dsp.exec_cmd(vars.editor))
 hl.bind(mainMod .. " + C",           hl.dsp.exec_cmd(vars.browser))
 hl.bind(mainMod .. " + SPACE",       hl.dsp.exec_cmd(vars.launcherScript))
+hl.bind(mainMod .. " + W",           hl.dsp.exec_cmd(vars.islandHome))
+hl.bind(mainMod .. " + CTRL + SPACE", hl.dsp.exec_cmd(vars.themeWidget))
+hl.bind(mainMod .. " + SHIFT + V",   hl.dsp.exec_cmd(vars.clipboardWidget))
 hl.bind(mainMod .. " + SHIFT + C",   hl.dsp.exec_cmd(vars.picker))
 hl.bind("CTRL + SHIFT + 4",          hl.dsp.exec_cmd(vars.screenshot))
-hl.bind(mainMod .. " + CTRL + SPACE", hl.dsp.exec_cmd(vars.themeMenuScript))
 
 --------------------------
 -- WINDOW MANAGEMENT --

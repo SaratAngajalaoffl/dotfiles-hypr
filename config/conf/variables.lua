@@ -46,10 +46,12 @@ M.wallpaperScript = "~/.local/bin/select_wallpaper.sh"
 M.songDetailScript = "~/.local/bin/song_detail.sh"
 M.reloadScript = "~/.local/bin/reload_all_services.sh"
 
--- rofi is gone; both of these are shell popups now. Kept as named vars so the
--- keybinds read the same as before.
-M.launcherScript = "qs ipc call popups toggle launcher"
-M.themeMenuScript = "qs ipc call popups toggle theme"
+-- rofi is gone; these open widgets in the shell's center island. Ids are
+-- listed by `qs ipc call island list`.
+M.launcherScript = "qs ipc call island toggle launcher"
+M.islandHome = "qs ipc call island toggle home"
+M.themeWidget = "qs ipc call island toggle theme"
+M.clipboardWidget = "qs ipc call island toggle clipboard"
 
 ----------------------------
 -- QUICKSHELL --
