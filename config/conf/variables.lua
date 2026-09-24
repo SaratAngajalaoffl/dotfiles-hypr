@@ -43,10 +43,13 @@ M.pfpCache = "~/.cache/appearance/pfp.jpg"
 --------------------------
 
 M.wallpaperScript = "~/.local/bin/select_wallpaper.sh"
-M.toggleRofiScript = "~/.local/bin/toggle_rofi.sh"
 M.songDetailScript = "~/.local/bin/song_detail.sh"
 M.reloadScript = "~/.local/bin/reload_all_services.sh"
-M.themeMenuScript = "~/.local/bin/theme-menu.sh"
+
+-- rofi is gone; both of these are shell popups now. Kept as named vars so the
+-- keybinds read the same as before.
+M.launcherScript = "qs ipc call popups toggle launcher"
+M.themeMenuScript = "qs ipc call popups toggle theme"
 
 ----------------------------
 -- QUICKSHELL --

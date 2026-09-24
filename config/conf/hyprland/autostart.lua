@@ -22,14 +22,16 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("usr/lib/xdg-desktop-portal-hyprland")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
 
-    -- Quickshell replaces waybar/rofi/dunst/eww. The old stack still runs
-    -- alongside it until the migration completes, so the shell can be
-    -- compared against it and rolled back by deleting one line.
+    -- Quickshell is the whole shell: bar, frame, notifications, launcher,
+    -- emoji picker, wallpaper control (via awww). It replaced
+    -- waybar/rofi/dunst/eww/hyprpaper.
     hl.exec_cmd(vars.quickshell)
-    hl.exec_cmd("waybar")
-    hl.exec_cmd("eww daemon")
 
-    hl.exec_cmd("hyprpaper")
+    -- awww's daemon is started here rather than by the shell: a child process
+    -- of `qs` dies with it, but the daemon needs to outlive shell restarts so
+    -- the wallpaper does not blink out every time the config reloads.
+    hl.exec_cmd("awww-daemon")
+
     hl.exec_cmd("hyprsunset")
     hl.exec_cmd("nm-applet")
     hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
