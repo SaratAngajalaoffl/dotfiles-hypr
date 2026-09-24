@@ -18,11 +18,13 @@ hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd(vars.reloadScript))
 ------------------------
 hl.bind(mainMod .. " + TAB",         hl.dsp.exec_cmd(vars.terminal))
 hl.bind(mainMod .. " + E",           hl.dsp.exec_cmd(vars.fileManager))
-hl.bind(mainMod .. " + T",           hl.dsp.exec_cmd(vars.editor))
 hl.bind(mainMod .. " + C",           hl.dsp.exec_cmd(vars.browser))
 hl.bind(mainMod .. " + SPACE",       hl.dsp.exec_cmd(vars.launcherScript))
 hl.bind(mainMod .. " + W",           hl.dsp.exec_cmd(vars.islandHome))
-hl.bind(mainMod .. " + CTRL + SPACE", hl.dsp.exec_cmd(vars.themeWidget))
+hl.bind(mainMod .. " + T",           hl.dsp.exec_cmd(vars.themeWidget))
+hl.bind(mainMod .. " + A",           hl.dsp.exec_cmd(vars.agentsWidget))
+hl.bind(mainMod .. " + P",           hl.dsp.exec_cmd(vars.pomodoroWidget))
+hl.bind(mainMod .. " + S",           hl.dsp.exec_cmd(vars.settingsWidget))
 hl.bind(mainMod .. " + SHIFT + V",   hl.dsp.exec_cmd(vars.clipboardWidget))
 hl.bind(mainMod .. " + M",           hl.dsp.exec_cmd(vars.emojiWidget))
 hl.bind(mainMod .. " + SHIFT + C",   hl.dsp.exec_cmd(vars.picker))
@@ -33,7 +35,6 @@ hl.bind("CTRL + SHIFT + 4",          hl.dsp.exec_cmd(vars.screenshot))
 --------------------------
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + P", hl.dsp.layout("togglesplit")) -- dwindle
 
 --------------------------
 -- WINDOW NAVIGATION --
