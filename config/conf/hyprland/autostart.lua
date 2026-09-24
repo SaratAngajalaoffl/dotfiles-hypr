@@ -17,14 +17,12 @@ hl.on("hyprland.start", function()
     ------------------------
     -- PROGRAMS AUTOSTART --
     ------------------------
-    hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("/usr/lib/xdg-desktop-portal")
     hl.exec_cmd("usr/lib/xdg-desktop-portal-hyprland")
-    hl.exec_cmd("systemctl --user start hyprpolkitagent")
 
     -- Quickshell is the whole shell: bar, frame, notifications, launcher,
-    -- emoji picker, wallpaper control (via awww). It replaced
-    -- waybar/rofi/dunst/eww/hyprpaper.
+    -- emoji picker, wallpaper control (via awww), and the polkit agent. It
+    -- replaced waybar/rofi/dunst/eww/hyprpaper/hyprpolkitagent.
     hl.exec_cmd(vars.quickshell)
 
     -- awww's daemon is started here rather than by the shell: a child process
