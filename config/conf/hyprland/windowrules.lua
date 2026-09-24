@@ -52,6 +52,20 @@ hl.window_rule({
     float = true,
 })
 
+-- ── Quickshell layer rules ──────────────────────────────────────────────
+-- Namespace is `quickshell` (verified with `hyprctl layers` while the shell
+-- was running — Quickshell derives it from the Wayland appId, and there is no
+-- `namespace` property to set).
+--
+-- ignore_alpha = 0.0 because hyprctl reports alpha: 1 for these surfaces even
+-- when the QML content is translucent (alpha is per-pixel), so gating blur on
+-- alpha would never match. See the Chunk 0 finding F4 in the migration plan.
+hl.layer_rule({
+    match = { namespace = "quickshell" },
+    blur = true,
+    ignore_alpha = 0.0,
+})
+
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- "Smart gaps" / "No gaps when only"
 -- uncomment all if you wish to use that.

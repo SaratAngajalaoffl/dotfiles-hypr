@@ -21,8 +21,14 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("/usr/lib/xdg-desktop-portal")
     hl.exec_cmd("usr/lib/xdg-desktop-portal-hyprland")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
+
+    -- Quickshell replaces waybar/rofi/dunst/eww. The old stack still runs
+    -- alongside it until the migration completes, so the shell can be
+    -- compared against it and rolled back by deleting one line.
+    hl.exec_cmd(vars.quickshell)
     hl.exec_cmd("waybar")
     hl.exec_cmd("eww daemon")
+
     hl.exec_cmd("hyprpaper")
     hl.exec_cmd("hyprsunset")
     hl.exec_cmd("nm-applet")

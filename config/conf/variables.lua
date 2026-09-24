@@ -48,4 +48,14 @@ M.songDetailScript = "~/.local/bin/song_detail.sh"
 M.reloadScript = "~/.local/bin/reload_all_services.sh"
 M.themeMenuScript = "~/.local/bin/theme-menu.sh"
 
+----------------------------
+-- QUICKSHELL --
+----------------------------
+
+-- The shell is a directory symlink to ~/.config/quickshell, which Quickshell
+-- registers as its 'default' config, so the invocation is plain `qs` —
+-- `qs -c quickshell` does NOT work here (verified).
+M.quickshell = "qs"
+M.quickshellDismissAll = "qs ipc call popups closeAll"
+
 return M
