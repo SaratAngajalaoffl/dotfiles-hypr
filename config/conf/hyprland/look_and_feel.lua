@@ -19,7 +19,7 @@ hl.config({
         gaps_in  = 5,
         gaps_out = 20,
 
-        border_size = 2,
+        border_size = 0,
 
         -- https://wiki.hypr.land/Configuring/Basics/Variables/#variable-types for info about colors
         col = {
@@ -42,7 +42,7 @@ hl.config({
 
         -- Change transparency of focused and unfocused windows
         active_opacity   = 1.0,
-        inactive_opacity = 1.0,
+        inactive_opacity = 0.8,
 
         shadow = {
             enabled      = true,
@@ -54,8 +54,8 @@ hl.config({
         -- https://wiki.hypr.land/Configuring/Basics/Variables/#blur
         blur = {
             enabled = true,
-            size    = 3,
-            passes  = 1,
+            size    = 10,
+            passes  = 3,
 
             vibrancy = 0.1696,
         },
