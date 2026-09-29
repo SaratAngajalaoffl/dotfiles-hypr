@@ -11,5 +11,5 @@ local function disabled(output)
 end
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
-hl.monitor({ output = vars.monitor1, mode = "preferred", position = "0x0",      scale = 1, bitdepth = 10 })
-hl.monitor({ output = vars.monitor2, mode = "preferred", position = "2560x0",   scale = 1, bitdepth = 10 })
+hl.monitor({ output = vars.monitor1, mode = "preferred", position = "0x0",      scale = 1, bitdepth = 10, disabled = disabled(vars.monitor1) })
+hl.monitor({ output = vars.monitor2, mode = "preferred", position = "2560x0",   scale = 1, bitdepth = 10, disabled = disabled(vars.monitor2) })
