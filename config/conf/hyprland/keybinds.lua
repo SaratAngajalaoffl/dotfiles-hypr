@@ -72,8 +72,8 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 hl.bind("ALT + SPACE", hl.dsp.window.fullscreen({ action = "toggle" }))
 
 -- Dictation (voxtype): hold to talk, release to transcribe and type
-hl.bind("Alt_R", hl.dsp.exec_cmd("voxtype record start"), { non_consuming = true })
-hl.bind("Alt_R", hl.dsp.exec_cmd("voxtype record stop"), { release = true, non_consuming = true })
+hl.bind("Alt_L", hl.dsp.exec_cmd("voxtype record start"), { non_consuming = true })
+hl.bind("Alt_L", hl.dsp.exec_cmd("voxtype record stop"), { release = true, non_consuming = true })
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioRaiseVolume",  hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
