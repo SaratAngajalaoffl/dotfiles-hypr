@@ -56,6 +56,7 @@ M.emojiWidget = "qs ipc call island toggle emoji"
 M.agentsWidget = "qs ipc call island toggle agents"
 M.pomodoroWidget = "qs ipc call island toggle pomodoro"
 M.settingsWidget = "qs ipc call island toggle settings"
+M.powerWidget = "qs ipc call island toggle power"
 
 ----------------------------
 -- QUICKSHELL --

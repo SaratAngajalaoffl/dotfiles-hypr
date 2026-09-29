@@ -29,6 +29,7 @@ hl.bind(mainMod .. " + SHIFT + V",   hl.dsp.exec_cmd(vars.clipboardWidget))
 hl.bind(mainMod .. " + M",           hl.dsp.exec_cmd(vars.emojiWidget))
 hl.bind(mainMod .. " + SHIFT + C",   hl.dsp.exec_cmd(vars.picker))
 hl.bind("CTRL + SHIFT + 4",          hl.dsp.exec_cmd(vars.screenshot))
+hl.bind("CTRL + SHIFT + BackSpace",  hl.dsp.exec_cmd(vars.powerWidget))
 
 --------------------------
 -- WINDOW MANAGEMENT --
